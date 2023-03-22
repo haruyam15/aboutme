@@ -1,0 +1,44 @@
+import { AiFillGithub, AiOutlineInstagram, AiOutlineMail, AiOutlineMobile} from 'react-icons/ai'
+import { RxNotionLogo } from 'react-icons/rx'
+export default function Contact(){
+
+    return (
+        <div>
+            <h2 className="text-left text-4xl font-bold mb-20">CONTACT</h2>
+
+            <div className="text-left mb-5">
+                <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=haruyam15@gmail.com" className="text-2xl font-bold" target="_blank">
+                    MAIL - haruyam15@gmail.com
+                </a>
+
+                <p className="text-2xl font-bold mt-5">MOBILE - 010-9227-3676</p>
+            </div>
+            
+
+            <ul className="flex justify-start items-center">
+                <li className="mr-10">
+                    <a href="//github.com/haruyam15" className="flex flex-col items-center justify-between text-lg" target="_blank">
+                        <p className="text-2xl font-bold mb-3">GITHUB</p>
+                        <AiFillGithub className="h-[80px] w-auto"/>
+                    </a>
+                </li>
+                <li className="mr-10">
+                    <a href="//www.notion.so/147177a468d449c3bb53b282eeaf54d2" className="flex flex-col items-center justify-between text-lg" target="_blank">
+                        <p className="text-2xl font-bold mb-3">NOTION</p>
+                        <RxNotionLogo className="h-[80px] w-auto"/>
+                    </a>
+                </li>
+                <li>
+                    <a href="//www.instagram.com/haruyam15/" className="flex flex-col items-center justify-between text-lg" target="_blank">
+                        <p className="text-2xl font-bold mb-3">INSTAGRAM</p>
+                        <AiOutlineInstagram className="h-[80px] w-auto"/>
+                    </a>
+                </li>
+
+                
+            </ul>
+            
+        </div>
+    );
+
+}
