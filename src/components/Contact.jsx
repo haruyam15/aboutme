@@ -3,15 +3,15 @@ import { RxNotionLogo } from 'react-icons/rx'
 export default function Contact(){
 
     return (
-        <div>
+        <div id="contact" className="mb-20">
             <h2 className="text-left text-4xl font-bold mb-20">CONTACT</h2>
 
             <div className="text-left mb-5">
                 <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=haruyam15@gmail.com" className="text-2xl font-bold" target="_blank">
-                    MAIL - haruyam15@gmail.com
+                    MAIL : haruyam15@gmail.com
                 </a>
 
-                <p className="text-2xl font-bold mt-5">MOBILE - 010-9227-3676</p>
+                <p className="text-2xl font-bold mt-5">MOBILE : 010-9227-3676</p>
             </div>
             
 

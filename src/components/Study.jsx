@@ -1,7 +1,7 @@
 export default function Study(){
 
     return (
-        <div>
+        <div id="study">
             <h2 className="text-left text-4xl font-bold mb-20">STUDY</h2>
 
             <ul className="px-4">

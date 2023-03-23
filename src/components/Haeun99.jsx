@@ -5,7 +5,7 @@ export default function Haeun99(props) {
   const group = useRef()
   const { nodes, materials, animations } = useGLTF('/haeun99.glb')
   const { actions } = useAnimations(animations, group)
-  console.log(actions)
+
   useEffect(()=>{
     actions['Armature|mixamo.com|Layer0.001'].play()
   },[])
