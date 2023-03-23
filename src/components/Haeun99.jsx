@@ -3,7 +3,7 @@ import { useGLTF, useAnimations } from '@react-three/drei'
 
 export default function Haeun99(props) {
   const group = useRef()
-  const { nodes, materials, animations } = useGLTF('/haeun99.glb')
+  const { nodes, materials, animations } = useGLTF('./haeun99.glb')
   const { actions } = useAnimations(animations, group)
 
   useEffect(()=>{
