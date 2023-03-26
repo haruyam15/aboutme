@@ -30,7 +30,8 @@ export default function Study(){
                                 <dd><a className="text-[#38bdf8] underline underline-offset-8" href="//vermillion-genie-6f5e78.netlify.app/" target="_blank">https://vermillion-genie-6f5e78.netlify.app/</a></dd>
                             </dl>
                         </div>
-                       <img src="./images/youtube.gif" width="600" alt="" />
+                        <a href="//vermillion-genie-6f5e78.netlify.app/" target="_blank"><img src="./images/youtube.gif" width="600" alt="유튜브 클론 바로가기" /></a>
+                       
                     </div>
                 </li>
 
@@ -58,7 +59,8 @@ export default function Study(){
                                 <dd><a className="text-[#38bdf8] underline underline-offset-8" href="//capable-biscuit-9029c8.netlify.app/" target="_blank">https://capable-biscuit-9029c8.netlify.app/</a></dd>
                             </dl>
                         </div>
-                       <img src="./images/react.gif" width="600" alt="" />
+                        <a href="//capable-biscuit-9029c8.netlify.app/" target="_blank"><img src="./images/react.gif" width="600" alt="리액트 todo앱 바로가기" /></a>
+                       
                     </div>
                 </li>
 
@@ -84,7 +86,8 @@ export default function Study(){
                                 <dd><a className="text-[#38bdf8] underline underline-offset-8" href="//soft-medovik-8bf0ed.netlify.app/" target="_blank">https://soft-medovik-8bf0ed.netlify.app/</a></dd>
                             </dl>
                         </div>
-                       <img src="./images/vanillajs.gif" width="600" alt="" />
+                        <a href="//soft-medovik-8bf0ed.netlify.app/" target="_blank"><img src="./images/vanillajs.gif" width="600" alt="바닐라js todo앱 바로가기" /></a>
+                       
                     </div>
                 </li>
 
