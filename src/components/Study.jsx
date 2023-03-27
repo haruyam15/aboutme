@@ -18,11 +18,11 @@ export default function Study(){
                             </div>
 
                             <ul className="flex justify-start items-center mt-5">
-                                <li className="mr-2"><img src="./images/html5.png" alt="" width="50" /></li>
-                                <li className="mr-2"><img src="./images/css3.png" alt="" width="50" /></li>
-                                <li className="mr-2"><img src="./images/js.png" alt="" width="50" /></li>
-                                <li className="mr-2"><img src="./images/react.png" alt="" width="50" /></li>
-                                <li className="mr-2"><img src="./images/tailwind-sm.png" alt="" width="50" /></li>
+                                <li className="mr-2"><img src="./images/html5.png" alt="html5" width="50" /></li>
+                                <li className="mr-2"><img src="./images/css3.png" alt="css3" width="50" /></li>
+                                <li className="mr-2"><img src="./images/js.png" alt="js" width="50" /></li>
+                                <li className="mr-2"><img src="./images/react.png" alt="react" width="50" /></li>
+                                <li className="mr-2"><img src="./images/tailwind-sm.png" alt="tailwind" width="50" /></li>
                             </ul>
 
                             <dl className="mt-3">
@@ -47,11 +47,11 @@ export default function Study(){
                             </div>
 
                             <ul className="flex justify-start items-center mt-5">
-                                <li className="mr-2"><img src="./images/html5.png" alt="" width="50" /></li>
-                                <li className="mr-2"><img src="./images/css3.png" alt="" width="50" /></li>
-                                <li className="mr-2"><img src="./images/js.png" alt="" width="50" /></li>
-                                <li className="mr-2"><img src="./images/react.png" alt="" width="50" /></li>
-                                <li className="mr-2"><img src="./images/postcss.png" alt="" width="50" /></li>
+                                <li className="mr-2"><img src="./images/html5.png" alt="html5" width="50" /></li>
+                                <li className="mr-2"><img src="./images/css3.png" alt="css3" width="50" /></li>
+                                <li className="mr-2"><img src="./images/js.png" alt="js" width="50" /></li>
+                                <li className="mr-2"><img src="./images/react.png" alt="react" width="50" /></li>
+                                <li className="mr-2"><img src="./images/postcss.png" alt="postcss" width="50" /></li>
                             </ul>
 
                             <dl className="mt-3">
@@ -76,9 +76,9 @@ export default function Study(){
                             </div>
 
                             <ul className="flex justify-start items-center mt-5">
-                                <li className="mr-2"><img src="./images/html5.png" alt="" width="50" /></li>
-                                <li className="mr-2"><img src="./images/css3.png" alt="" width="50" /></li>
-                                <li className="mr-2"><img src="./images/js.png" alt="" width="50" /></li>
+                                <li className="mr-2"><img src="./images/html5.png" alt="html5" width="50" /></li>
+                                <li className="mr-2"><img src="./images/css3.png" alt="css3" width="50" /></li>
+                                <li className="mr-2"><img src="./images/js.png" alt="js" width="50" /></li>
                             </ul>
 
                             <dl className="mt-3">

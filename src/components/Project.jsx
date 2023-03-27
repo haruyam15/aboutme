@@ -27,7 +27,7 @@ export default function Project(){
                                 <li className="mr-2"><img src="./images/ajax.png" alt="ajax" width="50" /></li>
                             </ul>
                         </div>
-                       <img src="./images/intranet.gif" width="600" alt="" />
+                       <img src="./images/intranet.gif" width="600" alt="인트라넷" />
                     </div>
 
                     
@@ -61,7 +61,7 @@ export default function Project(){
                             </ul>
                         </div>
 
-                       <img src="./images/cindi.gif" width="600" alt="" />
+                       <img src="./images/cindi.gif" width="600" alt="신디" />
                     </div>
                 </li>
             </ul>

@@ -23,7 +23,7 @@ export default function Contact(){
                     </a>
                 </li>
                 <li className="mr-10">
-                    <a href="//www.notion.so/147177a468d449c3bb53b282eeaf54d2" className="flex flex-col items-center justify-between text-lg" target="_blank">
+                    <a href="//haruyam15.notion.site/03304485a7a84f94ac2b4d35256ac2d8" className="flex flex-col items-center justify-between text-lg" target="_blank">
                         <p className="text-2xl font-bold mb-3">NOTION</p>
                         <RxNotionLogo className="h-[80px] w-auto"/>
                     </a>
