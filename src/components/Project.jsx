@@ -19,15 +19,19 @@ export default function Project(){
                             </div>
 
                             <ul className="flex justify-start items-center mt-5">
-                                <li className="mr-2"><img src="./images/html5.png" alt="html" width="50" /></li>
-                                <li className="mr-2"><img src="./images/css3.png" alt="css3" width="50" /></li>
-                                <li className="mr-2"><img src="./images/js.png" alt="js" width="50" /></li>
-                                <li className="mr-2"><img src="./images/jquery.png" alt="jquery" width="50" /></li>
-                                <li className="mr-2"><img src="./images/bootstrap.png" alt="bootstrap" width="50" /></li>
-                                <li className="mr-2"><img src="./images/ajax.png" alt="ajax" width="50" /></li>
+                                <li className="mr-2"><picture><source srcSet="./images/html5.webp" type="image/webp" widtd="50" /><img src="./images/html5.png" alt="html5" width="50" /></picture></li>
+                                <li className="mr-2"><picture><source srcSet="./images/css3.webp" type="image/webp" widtd="50" /><img src="./images/css3.png" alt="css3" width="50" /></picture></li>
+                                <li className="mr-2"><picture><source srcSet="./images/js.webp" type="image/webp" widtd="50" /><img src="./images/js.png" alt="js" width="50" /></picture></li>
+                                <li className="mr-2"><picture><source srcSet="./images/jquery.webp" type="image/webp" widtd="50" /><img src="./images/jquery.png" alt="jquery" width="50" /></picture></li>
+                                <li className="mr-2"><picture><source srcSet="./images/bootstrap.webp" type="image/webp" widtd="50" /><img src="./images/bootstrap.png" alt="bootstrap" width="50" /></picture></li>
+                                <li className="mr-2"><picture><source srcSet="./images/ajax.webp" type="image/webp" widtd="50" /><img src="./images/ajax.png" alt="ajax" width="50" /></picture></li>
                             </ul>
                         </div>
-                       <img src="./images/intranet.gif" width="600" alt="인트라넷" />
+                        <video autoPlay loop muted playsInline width={600}>
+                            <source src="./images/intranet.webm" type="video/webm" />
+                            <source src="./images/intranet.mp4" type="video/mp4" />
+                        </video>
+                        {/* <video src="./images/intranet_.mp4" width="600" autoPlay loop muted poster="./images/intranet_poster.png"></video> */}
                     </div>
 
                     
@@ -53,15 +57,18 @@ export default function Project(){
                             </div>
 
                             <ul className="flex justify-start items-center mt-5">
-                                <li className="mr-2"><img src="./images/html5.png" alt="html5" width="50" /></li>
-                                <li className="mr-2"><img src="./images/css3.png" alt="css3" width="50" /></li>
-                                <li className="mr-2"><img src="./images/js.png" alt="js" width="50" /></li>
-                                <li className="mr-2"><img src="./images/jquery.png" alt="jquery" width="50" /></li>
-                                <li className="mr-2"><img src="./images/bootstrap.png" alt="bootstrap" width="50" /></li>
+                                <li className="mr-2"><picture><source srcSet="./images/html5.webp" type="image/webp" widtd="50" /><img src="./images/html5.png" alt="html5" width="50" /></picture></li>
+                                <li className="mr-2"><picture><source srcSet="./images/css3.webp" type="image/webp" widtd="50" /><img src="./images/css3.png" alt="css3" width="50" /></picture></li>
+                                <li className="mr-2"><picture><source srcSet="./images/js.webp" type="image/webp" widtd="50" /><img src="./images/js.png" alt="js" width="50" /></picture></li>
+                                <li className="mr-2"><picture><source srcSet="./images/jquery.webp" type="image/webp" widtd="50" /><img src="./images/jquery.png" alt="jquery" width="50" /></picture></li>
+                                <li className="mr-2"><picture><source srcSet="./images/bootstrap.webp" type="image/webp" widtd="50" /><img src="./images/bootstrap.png" alt="bootstrap" width="50" /></picture></li>
                             </ul>
                         </div>
 
-                       <img src="./images/cindi.gif" width="600" alt="신디" />
+                        <video autoPlay loop muted playsInline width={600}>
+                            <source src="./images/cindi.webm" type="video/webm" />
+                            <source src="./images/cindi.mp4" type="video/mp4" />
+                        </video>
                     </div>
                 </li>
             </ul>

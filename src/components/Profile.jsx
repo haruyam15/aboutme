@@ -1,4 +1,3 @@
-import { OrbitControls } from '@react-three/drei';
 import { Canvas } from '@react-three/fiber';
 import Haeun99 from './Haeun99';
 
@@ -12,8 +11,6 @@ export default function Profile(){
                 <ambientLight intensity={0.1} />
                 <directionalLight intensity={0.4} />
                 <Haeun99 position={[0.4, -0.5, 0]} />
-            
-                {/* <OrbitControls/> */}
             </Canvas>
         </div>
     );

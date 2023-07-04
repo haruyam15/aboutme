@@ -8,7 +8,12 @@ export default function Skills(){
             <ul className="grid grid-cols-5 gap-10">
                 {skills.map((skill, i)=>{
                     return(
-                        <li className="flex items-center justify-center mb-5" key={i}><img src={`./images/${skill}.png`} alt={skill} /></li>
+                        <li className="flex items-center justify-center mb-5" key={i}>
+                            <picture>
+                                <source srcSet={`./images/${skill}.webp`} type="image/webp" />  
+                                <img src={`./images/${skill}.png`} alt={skill} />
+                            </picture>
+                        </li>
                     )
                 })}
             </ul>
