@@ -1,11 +1,15 @@
-export default function Project(){
+import useScrollFadeIn from '../hooks/useScrollFadeIn';
 
+export default function Project(){
+    const ani1 = useScrollFadeIn();
+    const ani2 = useScrollFadeIn();
+    const ani3 = useScrollFadeIn();
     return (
         <div id="project">
-            <h2 className="text-left text-4xl font-bold mb-20">PROJECT</h2>
+            <h2 className="text-left text-4xl font-bold mb-20" {...ani1}>PROJECT</h2>
 
             <ul className="px-4">
-                <li className="mb-20">
+                <li className="mb-20" {...ani2}>
                     <p className="text-2xl font-bold text-left mb-10">• 인트라넷 리뉴얼</p>
 
                     <div className="flex justify-between items-center">
@@ -37,7 +41,7 @@ export default function Project(){
                     
                     
                 </li>
-                <li className="mb-20">
+                <li className="mb-20" {...ani3}>
                     <p className="text-2xl font-bold text-left mb-10">• 인스타그램 ・ 유튜브 계정분석 플랫폼 CINDI</p>
 
                     <div className="flex justify-between items-center">

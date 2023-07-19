@@ -1,11 +1,17 @@
+import useScrollFadeIn from '../hooks/useScrollFadeIn';
+
 export default function Study(){
+    const ani1 = useScrollFadeIn();
+    const ani2 = useScrollFadeIn();
+    const ani3 = useScrollFadeIn();
+    const ani4 = useScrollFadeIn();
 
     return (
         <div id="study">
-            <h2 className="text-left text-4xl font-bold mb-20">STUDY</h2>
+            <h2 className="text-left text-4xl font-bold mb-20" {...ani1}>STUDY</h2>
 
             <ul className="px-4">
-            <li className="mb-20">
+            <li className="mb-20" {...ani2}>
                     <p className="text-2xl font-bold text-left mb-10">• React로 Youtube 똑같이 만들어보기</p>
 
                     <div className="flex justify-between items-center">
@@ -41,7 +47,7 @@ export default function Study(){
                     </div>
                 </li>
 
-                <li className="mb-20">
+                <li className="mb-20" {...ani3}>
                     <p className="text-2xl font-bold text-left mb-10">• React로 TODO 앱 만들기</p>
 
                     <div className="flex justify-between items-center">
@@ -77,7 +83,7 @@ export default function Study(){
                     </div>
                 </li>
 
-                <li className="">
+                <li className="" {...ani4}>
                     <p className="text-2xl font-bold text-left mb-10">• 바닐라 JS로 크롬 앱 만들기</p>
 
                     <div className="flex justify-between items-center">

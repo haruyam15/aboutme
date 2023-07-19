@@ -6,7 +6,6 @@ import Skills from "./Skills";
 import Study from "./Study";
 
 export default function Content(){
-    
 
     return (
         <div id="content" className="pt-[88px]">
