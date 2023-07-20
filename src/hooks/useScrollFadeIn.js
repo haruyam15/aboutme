@@ -7,8 +7,6 @@ export default function useScrollFadeIn(){
       const { current } = dom;
     	
     	if(entry.isIntersecting) {
-        console.dir(current)
-        // 원하는 이벤트를 추가 할 것
         current.classList.add('fadeInUp');
       }
     }, []);
