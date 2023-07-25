@@ -18,9 +18,10 @@ export default function Study(){
                         <div className="flex flex-col justify-between text-left text-lg mr-10">
                             <div>
                                 <p>- Youtube API 사용</p>
-                                <p>- 검색기능</p>
+                                <p>- 키워드 검색기능</p>
                                 <p>- React Query와 React Router 사용</p>
-                                <p>- Tailwind CSS 사용하여 반응형 UI</p>
+                                <p>- Tailwind CSS 사용</p>
+                                <p>- 반응형 UI</p>
                             </div>
 
                             <ul className="flex justify-start items-center mt-5">
