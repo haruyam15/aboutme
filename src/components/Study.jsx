@@ -5,6 +5,8 @@ export default function Study(){
     const ani2 = useScrollFadeIn();
     const ani3 = useScrollFadeIn();
     const ani4 = useScrollFadeIn();
+    const ani5 = useScrollFadeIn();
+
 
     return (
         <div id="study">
@@ -84,7 +86,43 @@ export default function Study(){
                     </div>
                 </li>
 
-                <li className="" {...ani4}>
+                <li className="mb-20" {...ani4}>
+                    <p className="text-2xl font-bold text-left mb-10">• React로 쇼핑몰 Shoppy 만들기</p>
+
+                    <div className="flex justify-between items-center">
+                        <div className="flex flex-col justify-between text-left text-lg mr-10">
+                            <div>
+                                <p>- Firebase 실시간 데이터베이스 연동</p>
+                                <p>- Firebase 로그인 구현</p>
+                                <p>- React Query와 React Router 사용</p>
+                                <p>- Tailwind CSS 사용</p>
+                            </div>
+
+                            <ul className="flex justify-start items-center mt-5">
+                                <li className="mr-2"><picture><source srcSet="./images/html5.webp" type="image/webp" widtd="50" /><img src="./images/html5.png" alt="html5" width="50" /></picture></li>
+                                <li className="mr-2"><picture><source srcSet="./images/css3.webp" type="image/webp" widtd="50" /><img src="./images/css3.png" alt="css3" width="50" /></picture></li>
+                                <li className="mr-2"><picture><source srcSet="./images/js.webp" type="image/webp" widtd="50" /><img src="./images/js.png" alt="js" width="50" /></picture></li>
+                                <li className="mr-2"><picture><source srcSet="./images/react.webp" type="image/webp" widtd="50" /><img src="./images/react.png" alt="react" width="50" /></picture></li>
+                                <li className="mr-2"><picture><source srcSet="./images/firebase.webp" type="image/webp" widtd="40" /><img src="./images/firebase.png" alt="firebase" width="40" /></picture></li>
+                                <li className="mr-2"><picture><source srcSet="./images/tailwind-sm.webp" type="image/webp" widtd="50" /><img src="./images/tailwind-sm.png" alt="tailwind" width="50" /></picture></li>
+                            </ul>
+
+                            <dl className="mt-3">
+                                <dt className="font-bold">URL</dt>
+                                <dd><a className="text-[#38bdf8] underline underline-offset-8" href="https://graceful-crumble-587820.netlify.app/" target="_blank">https://graceful-crumble-587820.netlify.app/</a></dd>
+                            </dl>
+                        </div>
+                        <a href="https://graceful-crumble-587820.netlify.app/" target="_blank">
+                            <video autoPlay loop muted playsInline width={600}>
+                                <source src="./images/shoppy.webm" type="video/webm" />
+                                <source src="./images/shoppy.mp4" type="video/mp4" />
+                            </video>
+                        </a>
+                       
+                    </div>
+                </li>
+
+                <li className="" {...ani5}>
                     <p className="text-2xl font-bold text-left mb-10">• 바닐라 JS로 크롬 앱 만들기</p>
 
                     <div className="flex justify-between items-center">
