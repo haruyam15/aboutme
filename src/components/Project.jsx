@@ -84,8 +84,8 @@ export default function Project(){
                 <li className="mb-28" {...ani4}>
                     <p className="text-2xl font-bold text-left mb-10">• 클라이언트 이벤트 페이지 퍼블리싱</p>
 
-                    <div className="flex justify-between items-stretch">
-                        <div className="flex flex-col justify-start text-left text-lg mr-10 z-10">
+                    <div className="flex justify-start items-stretch">
+                        <div className="w-[600px] flex flex-col justify-start text-left text-lg mr-32 z-10">
                             <div className="mt-5 mb-16">
                                 <p>삼성생명, 삼성카드, KB국민카드, 현대캐피탈, 아시아나, 푸르지오, 락토핏, 현대해상, 카카오뱅크, LG전자 등 많은 클라이언트의 <strong>이벤트 랜딩페이지를 제작</strong>했습니다.</p>
                             </div>
@@ -105,7 +105,7 @@ export default function Project(){
 
                         
                     
-                        <div className="w-[600px] -mt-16">
+                        <div className="w-[400px] -mt-16">
                             <Swiper effect={'cards'} grabCursor={true} modules={[EffectCards]} loop={true} className="projectSwiper">
                                 <SwiperSlide>
                                     <picture><source srcSet="./images/asiana.webp" type="image/webp" /><img src="./images/asiana.jpg" alt="asiana"/></picture>
