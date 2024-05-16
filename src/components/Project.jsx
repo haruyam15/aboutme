@@ -1,5 +1,4 @@
 import useScrollFadeIn from '../hooks/useScrollFadeIn';
-// import React, { useRef, useState } from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -8,9 +7,10 @@ import 'swiper/css';
 import 'swiper/css/effect-cards';
 
 // import required modules
-import { EffectCards } from 'swiper/modules';
+import { EffectCards, Autoplay } from 'swiper/modules';
 
 export default function Project(){
+
     const ani1 = useScrollFadeIn();
     const ani2 = useScrollFadeIn();
     const ani3 = useScrollFadeIn();
@@ -106,7 +106,14 @@ export default function Project(){
                         
                     
                         <div className="w-[400px] -mt-16">
-                            <Swiper effect={'cards'} grabCursor={true} modules={[EffectCards]} loop={true} className="projectSwiper">
+                            <Swiper
+                                className="projectSwiper"
+                                effect={'cards'}
+                                grabCursor={true}
+                                modules={[EffectCards, Autoplay]}
+                                loop={true}
+                                autoplay={{delay: 1500, disableOnInteraction: false}}
+                                >
                                 <SwiperSlide>
                                     <picture><source srcSet="./images/asiana.webp" type="image/webp" /><img src="./images/asiana.jpg" alt="asiana"/></picture>
                                 </SwiperSlide>
