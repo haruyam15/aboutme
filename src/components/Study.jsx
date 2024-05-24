@@ -128,7 +128,7 @@ export default function Study(){
                     <div className="flex justify-between items-center">
                         <div className="flex flex-col justify-between text-left text-lg mr-10">
                             <div>
-                                <p>- 순수 Javascript만을 사용</p>
+                                <p>- 순수 JavaScript만을 사용</p>
                                 <p>- 로컬스토리지를 사용해 로그인, 투두리스트 관리</p>
                                 <p>- Weather API로 날씨 가져오기</p>
                             </div>
