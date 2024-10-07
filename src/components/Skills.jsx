@@ -38,6 +38,7 @@ export default function Skills() {
                 src={`./images/${skill}.svg`}
                 alt={skill}
                 title={titleMap[skill]}
+                width="150"
               />
             </li>
           );
