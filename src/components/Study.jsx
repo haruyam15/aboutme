@@ -4,8 +4,8 @@ export default function Study() {
   const ani1 = useScrollFadeIn();
   const ani2 = useScrollFadeIn();
   const ani3 = useScrollFadeIn();
-  const ani4 = useScrollFadeIn();
-  const ani5 = useScrollFadeIn();
+  // const ani4 = useScrollFadeIn();
+  // const ani5 = useScrollFadeIn();
 
   return (
     <div id="study">
@@ -15,6 +15,76 @@ export default function Study() {
 
       <ul className="px-4">
         <li className="mb-20" {...ani2}>
+          <p className="text-2xl font-bold text-left mb-10">
+            • 플레이리스트 공유 플랫폼 PLY
+          </p>
+
+          <div className="flex justify-between items-center">
+            <div className="flex flex-col justify-between text-left text-lg mr-10">
+              <div>
+                <p>- 공통 컴포넌트의 적절한 추상화로 재사용성과 확장성 향상</p>
+                <p>
+                  - 컴포넌트의 관심사 분리로(UI와 데이터로직) 유지보수성 강화
+                </p>
+                <p>
+                  - 데이터 로직의 경우 커스텀 훅으로 관리하여 중복코드를 줄임
+                </p>
+                <p>
+                  - useQuery를 사용하여 데이터 캐싱 및 로딩, 에러관리
+                  <br />
+                  -&gt; 성능 최적화 및 사용자경험 개선
+                </p>
+                <p>
+                  - 소셜 네트워킹 핵심 기능인 좋아요, 팔로우, 댓글기능을
+                  개발하여 플랫폼의 참여도와 사용자 체류 시간증가 기대
+                </p>
+              </div>
+
+              <ul className="flex justify-start items-center mt-5">
+                <li className="mr-2">
+                  <img src="./images/html5.svg" alt="html5" width="35" />
+                </li>
+                <li className="mr-2">
+                  <img src="./images/css3.svg" alt="css3" width="35" />
+                </li>
+                <li className="mr-2">
+                  <img src="./images/js.svg" alt="js" width="35" />
+                </li>
+                <li className="mr-2">
+                  <img src="./images/react.svg" alt="react" width="45" />
+                </li>
+                <li className="mr-2">
+                  <img
+                    src="./images/typescript.svg"
+                    alt="typescript"
+                    width="45"
+                  />
+                </li>
+              </ul>
+
+              <dl className="mt-3">
+                <dt className="font-bold">URL</dt>
+                <dd>
+                  <a
+                    className="text-[#38bdf8] underline underline-offset-8"
+                    href="https://playply.netlify.app/"
+                    target="_blank"
+                  >
+                    https://playply.netlify.app
+                  </a>
+                </dd>
+              </dl>
+            </div>
+            <a href="https://playply.netlify.app/" target="_blank">
+              <video autoPlay loop muted playsInline width={600}>
+                <source src="./images/ply.webm" type="video/webm" />
+                <source src="./images/ply.mp4" type="video/mp4" />
+              </video>
+            </a>
+          </div>
+        </li>
+
+        {/* <li className="mb-20" {...ani3}>
           <p className="text-2xl font-bold text-left mb-10">
             • React로 Youtube 똑같이 만들어보기
           </p>
@@ -71,11 +141,11 @@ export default function Study() {
               </video>
             </a>
           </div>
-        </li>
+        </li> */}
 
         <li className="mb-20" {...ani3}>
           <p className="text-2xl font-bold text-left mb-10">
-            • React로 쇼핑몰 Shoppy 만들기
+            • 반려동물 용품 편집샵 Shoppy
           </p>
 
           <div className="flex justify-between items-center">
