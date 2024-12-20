@@ -8,7 +8,7 @@ export default function SideProjects() {
   // const ani5 = useScrollFadeIn();
 
   return (
-    <div id="sideProjets">
+    <div id="sideprojects">
       <h2 className="mb-20 text-4xl font-bold text-left" {...ani1}>
         SIDE PROJECTS
       </h2>

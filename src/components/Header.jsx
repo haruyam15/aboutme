@@ -10,7 +10,8 @@ export default function Header() {
       window.scrollTo({ top: 0, behavior: 'smooth' });
     } else {
       const scrollTo =
-        document.getElementById(target.toLowerCase()).offsetTop -
+        document.getElementById(target.toLowerCase().replace(/\s+/g, ''))
+          .offsetTop -
         headerHeight -
         80;
       window.scrollTo({ top: scrollTo, behavior: 'smooth' });
