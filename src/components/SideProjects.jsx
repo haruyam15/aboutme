@@ -216,7 +216,7 @@ export default function SideProjects() {
                 </dd>
               </dl>
             </div>
-            <div className="-mt-24">
+            <div className="-mt-48">
               <a href="https://playply.netlify.app/" target="_blank">
                 <video autoPlay loop muted playsInline width={600}>
                   <source src="./images/ply.webm" type="video/webm" />
@@ -302,12 +302,14 @@ export default function SideProjects() {
               </dl>
             </div>
 
-            <a href="https://myeonppu.netlify.app/" target="_blank">
-              <video autoPlay loop muted playsInline width={600}>
-                <source src="./images/myeonppu.webm" type="video/webm" />
-                <source src="./images/myeonppu.mp4" type="video/mp4" />
-              </video>
-            </a>
+            <div className="-mt-72">
+              <a href="https://myeonppu.netlify.app/" target="_blank">
+                <video autoPlay loop muted playsInline width={600}>
+                  <source src="./images/myeonppu.webm" type="video/webm" />
+                  <source src="./images/myeonppu.mp4" type="video/mp4" />
+                </video>
+              </a>
+            </div>
           </div>
         </li>
       </ul>
