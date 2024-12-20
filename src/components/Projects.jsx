@@ -9,7 +9,7 @@ import 'swiper/css/effect-cards';
 // import required modules
 import { EffectCards, Autoplay } from 'swiper/modules';
 
-export default function Project() {
+export default function Projects() {
   const ani1 = useScrollFadeIn();
   const ani2 = useScrollFadeIn();
   const ani3 = useScrollFadeIn();
@@ -17,18 +17,18 @@ export default function Project() {
 
   return (
     <div id="project">
-      <h2 className="text-left text-4xl font-bold mb-20" {...ani1}>
-        PROJECT
+      <h2 className="mb-20 text-4xl font-bold text-left" {...ani1}>
+        PROJECTS
       </h2>
 
       <ul className="px-4">
         <li className="mb-40" {...ani2}>
-          <p className="text-2xl font-bold text-left mb-10">
+          <p className="mb-10 text-2xl font-bold text-left">
             • 인트라넷 리뉴얼
           </p>
 
-          <div className="flex justify-between items-center">
-            <div className="flex flex-col justify-between text-left text-lg mr-10">
+          <div className="flex items-center justify-between">
+            <div className="flex flex-col justify-between mr-10 text-lg text-left">
               <div>
                 <p>PHP로 만들어져있던 오래된 사내 인트라넷 개편했습니다.</p>
                 <p>
@@ -55,7 +55,7 @@ export default function Project() {
                 </p>
               </div>
 
-              <ul className="flex justify-start items-center mt-5">
+              <ul className="flex items-center justify-start mt-5">
                 <li className="mr-2">
                   <img src="./images/html5.svg" alt="html5" width="35" />
                 </li>
@@ -87,12 +87,12 @@ export default function Project() {
           </div>
         </li>
         <li className="mb-40" {...ani3}>
-          <p className="text-2xl font-bold text-left mb-10">
+          <p className="mb-10 text-2xl font-bold text-left">
             • 인스타그램 ・ 유튜브 계정분석 플랫폼 CINDI
           </p>
 
-          <div className="flex justify-between items-center">
-            <div className="flex flex-col justify-between text-left text-lg mr-10">
+          <div className="flex items-center justify-between">
+            <div className="flex flex-col justify-between mr-10 text-lg text-left">
               <div>
                 <p>
                   CINDI는 광고주의 인스타그램 계정과 유튜브 채널을{' '}
@@ -109,7 +109,7 @@ export default function Project() {
                 </p>
               </div>
 
-              <ul className="flex justify-start items-center mt-12">
+              <ul className="flex items-center justify-start mt-12">
                 <li className="mr-2">
                   <img src="./images/html5.svg" alt="html5" width="35" />
                 </li>
@@ -140,11 +140,11 @@ export default function Project() {
         </li>
 
         <li className="mb-28" {...ani4}>
-          <p className="text-2xl font-bold text-left mb-10">
+          <p className="mb-10 text-2xl font-bold text-left">
             • 클라이언트 이벤트 페이지 퍼블리싱
           </p>
 
-          <div className="flex justify-start items-stretch">
+          <div className="flex items-stretch justify-start">
             <div className="w-[600px] flex flex-col justify-start text-left text-lg mr-32 z-10">
               <div className="mt-5 mb-16">
                 <p>
@@ -170,7 +170,7 @@ export default function Project() {
                 </p>
               </div>
 
-              <ul className="flex justify-start items-center mt-12">
+              <ul className="flex items-center justify-start mt-12">
                 <li className="mr-2">
                   <img src="./images/html5.svg" alt="html5" width="35" />
                 </li>

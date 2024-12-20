@@ -8,7 +8,6 @@ const skills = [
   'redux',
   'zustand',
   'tanstackQuery',
-  'next',
   'tailwind',
 ];
 const titleMap = {
@@ -20,7 +19,6 @@ const titleMap = {
   redux: 'Redux',
   zustand: 'Zustand',
   tanstackQuery: 'Tanstack Query',
-  next: 'Next.js',
   tailwind: 'Tailwind CSS',
 };
 export default function Skills() {
@@ -28,7 +26,7 @@ export default function Skills() {
 
   return (
     <div id="skills">
-      <h2 className="text-left text-4xl font-bold mb-20 fadeInUp">SKILLS</h2>
+      <h2 className="mb-20 text-4xl font-bold text-left fadeInUp">SKILLS</h2>
 
       <ul className="grid grid-cols-5 gap-10" {...ani}>
         {skills.map((skill, i) => {
@@ -38,7 +36,7 @@ export default function Skills() {
                 src={`./images/${skill}.svg`}
                 alt={skill}
                 title={titleMap[skill]}
-                width="120"
+                width={skill === 'tailwind' ? '220' : '120'}
               />
             </li>
           );
