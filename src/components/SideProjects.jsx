@@ -144,7 +144,7 @@ export default function SideProjects() {
                 <p>
                   예를들어 기본값 설정을 통해 props 없이도 동작 가능한 구조로
                   설계했고, 유연성을 고려하기 위해
-                  <strong>어떤 상황에서 어떻게 사용될지</strong>
+                  <strong> 어떤 상황에서 어떻게 사용될지</strong>
                   생각하며 만들었습니다.
                 </p>
                 <p className="mt-4 mb-2 font-bold">
@@ -234,28 +234,27 @@ export default function SideProjects() {
 
           <div className="flex items-center justify-between">
             <div className="w-[600px] flex flex-col justify-between mr-10 text-lg text-left">
-              <div>
+              <div className="flex flex-col gap-2 ml-3 -indent-3">
                 <p>
                   - 기출 질문을 등록하고 답변을 작성하여 스터디원들과 공유할 수
                   있는 서비스입니다.
                 </p>
                 <p>
-                  - 스터디에 실질적인 도움을 주고자 구상했던 아이디어를 빠르게
-                  구현해 공유했습니다.
+                  - 스터디에 실질적인 도움을 주고자 구상했던{' '}
+                  <strong>아이디어를 빠르게 구현</strong>해 공유했습니다.
                 </p>
                 <p>
                   - 개발 기간은 1~2일로, Tailwind CSS와 Radix UI를 활용해
                   효율적으로 제작했습니다.
                 </p>
                 <p>
-                  - 실시간 데이터 동기화와 간편한 데이터베이스 활용을 위해
-                  Firebase Realtime Database를 적용했습니다.
+                  - 실시간 데이터 동기화와 <strong>간편한 데이터베이스</strong>{' '}
+                  활용을 위해 Firebase Realtime Database를 적용했습니다.
                 </p>
                 <p>
-                  - 간단하고 작은 서비스라도 실제 사용자로부터 피드백을 받을 수
-                  있다는 경험은 매우 소중하며, 이를 통해 사용자의 관점에서
-                  서비스를 개선하고 성장할 수 있는 기회를 얻는 것이 중요하다고
-                  생각합니다.
+                  - 간단하고 작은 서비스지만 실제{' '}
+                  <strong>사용자로부터 피드백</strong>을 받을 수 있는 경험은 늘{' '}
+                  <strong>보람</strong>찹니다.
                 </p>
               </div>
 
