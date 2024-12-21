@@ -101,27 +101,12 @@ export default function SideProjects() {
                   />
                 </li>
               </ul>
-
-              <dl className="mt-5">
-                <dt className="font-bold">URL</dt>
-                <dd>
-                  <a
-                    className="text-[#38bdf8] underline underline-offset-8"
-                    href="https://additional.5re5park.site/"
-                    target="_blank"
-                  >
-                    https://additional.5re5park.site/
-                  </a>
-                </dd>
-              </dl>
             </div>
             <div className="-mt-36">
-              <a href="https://additional.5re5park.site/" target="_blank">
-                <video autoPlay loop muted playsInline width={600}>
-                  <source src="./images/voice4you.webm" type="video/webm" />
-                  <source src="./images/voice4you.mp4" type="video/mp4" />
-                </video>
-              </a>
+              <video autoPlay loop muted playsInline width={600}>
+                <source src="./images/voice4you.webm" type="video/webm" />
+                <source src="./images/voice4you.mp4" type="video/mp4" />
+              </video>
             </div>
           </div>
         </li>
