@@ -5,7 +5,7 @@ export default function Main() {
   return (
     <div
       id="main"
-      className="flex justify-between items-center text-4xl font-medium text-left"
+      className="flex items-center justify-between text-3xl font-medium text-left"
     >
       <h2>
         <Typewriter
@@ -13,7 +13,8 @@ export default function Main() {
           onInit={(typewriter) => {
             typewriter
               .typeString(
-                '안녕하세요. 배하은입니다.<br/><br/>제 꿈은 <strong>카멜레온</strong>입니다.<br/><br/>변화를 두려워하지않고 어디서든 적응하고 잘 융화되지만,<br/><br/>그 안에서 나만의 독창적인 색깔을 보여주고 싶습니다.<br/><br/>저는 협업과 사람과의 관계를 중요하게 생각합니다.'
+                `안녕하세요. 배하은입니다.<br/><br/>저는 사용자와 비즈니스 흐름을 함께 고려한 화면을 고민합니다.<br/><br/>단순히 화면이 동작하는 데 그치지 않고,<br/><br/>‘왜 이렇게 되는지’를 코드 관점에서 이해하며 설계하려 노력합니다.<br/><br/>
+다양한 관점을 존중하고,<br/><br/>감정에 치우치지 않는 유연한 소통을 중요하게 생각합니다.`
               )
               .start();
           }}
