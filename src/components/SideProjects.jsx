@@ -5,7 +5,7 @@ export default function SideProjects() {
   const ani2 = useScrollFadeIn();
   const ani3 = useScrollFadeIn();
   const ani4 = useScrollFadeIn();
-  // const ani5 = useScrollFadeIn();
+  const ani5 = useScrollFadeIn();
 
   return (
     <div id="sideprojects">
@@ -14,7 +14,7 @@ export default function SideProjects() {
       </h2>
 
       <ul className="px-4">
-        {/* <li className="mb-40" {...ani2}>
+        <li className="mb-40" {...ani2}>
           <p className="mb-10 text-2xl font-bold text-left">
             • 지역 기반 중고경매 플랫폼 Bider
           </p>
@@ -22,57 +22,54 @@ export default function SideProjects() {
           <div className="flex items-center justify-between">
             <div className="w-[600px] flex flex-col justify-between mr-10 text-lg text-left">
               <div>
-                <p className="mb-2 font-bold">1) 백엔드 개발자와의 협업</p>
-                <p>
-                  API 설계에서 예상과 다른 결과물이 나와 어려움을 겪었습니다.
+                <p className="mb-2 font-bold">
+                  1) 공통 컴포넌트 구조와 모노레포 환경 설계
                 </p>
                 <p>
-                  API 수정 필요성을 백엔드 개발자에게 설명하며 설득하는 과정에서
-                  <strong> 서로의 상황을 명확히 이해</strong>하고 나의 입장을 잘
-                  전달해야 <strong>설득력</strong>을 가질 수 있다는 점을 배우게
-                  되었습니다.
-                </p>
-                <p className="mt-4 mb-2 font-bold">2) 제한된 개발 시간</p>
-                <p>프로젝트 기간이 두 달이었지만,</p>
-                <p>
-                  실제 프론트엔드
-                  <strong> 개발 시간</strong>은 점점 지연되며 일주일 정도로
-                  <strong> 제한적</strong>
-                  이었습니다.
+                  모노레포를 구축하며 공통 설정 관리, Storybook 위치, UI 패키지
+                  참조 방식 등 여러 구조적 선택지를 고민했습니다.
                 </p>
                 <p>
-                  마감 기한을 지키기 위해 <strong>기능 동작에 초점</strong>을
-                  맞춰 개발했습니다.
+                  예를 들어 UI 패키지는 build된 dist 파일 참조와 소스 직접
+                  참조(source import) 두 방식을 모두 적용해보며 비교했습니다.
+                  다양한 서비스에서 독립적으로 활용할 수 있는 구조를 위해,
+                  최종적으로 빌드 참조 방식을 채택해 설계했습니다.
                 </p>
-                <p>
-                  필요한 API를 먼저 제안하는 등 <strong>적극적인 태도</strong>로
-                  기간 확보가 어려운 상황에 대비해야 한다는 것을 느꼈습니다.
-                </p>
+
                 <p className="mt-4 mb-2 font-bold">
-                  3) 타입스크립트 초기 설계의 중요성
+                  2) 성능 개선과 사용자 오류 대응
                 </p>
                 <p>
-                  촉박한 일정에 조급해져 타입{' '}
-                  <strong>구조를 충분히 설계하지 못한 탓</strong>에 타입 충돌이
-                  빈번히 발생했고 이로 인해 타입에러를 해결하는 데 많은 시간이
-                  소요되었습니다.
+                  Lighthouse 측정 결과, LCP 수치가 5.3초로 높게 나왔습니다.
+                  원인은 무한스크롤과 지도 같은 동적 컴포넌트가 SSR 시 HTML에
+                  포함되지 않아, 페이지 진입 후 깜빡임과 지연이 발생한
+                  것이었습니다.
                 </p>
-                <p>
-                  과감하게{' '}
-                  <strong>
-                    타입 구조를 재설계하여 타입 안정성과 작업 효율성
-                  </strong>
-                  을 회복했습니다.
+                <p className="mt-1 font-semibold">&#91;개선과정&#93;</p>
+                <p className="indent-2">
+                  - 무한스크롤과 지도는 dynamic import로 초기 JS 번들에서 제외
                 </p>
-                <p>
-                  촉박한 일정일수록 초기 설계 단계에서 데이터 흐름과{' '}
-                  <strong>타입 구조를 명확히 정의하면 </strong>
-                  <strong>이후 작업 속도를 크게 높일 수 있다</strong>는 것을
-                  깨달았습니다.
+
+                <p className="indent-2">
+                  - 렌더링 시 깜빡이는 구간은 SSR 단계에서 숨기고, 클라이언트
+                  렌더링 후 표시
                 </p>
+                <p className="flex flex-col indent-2">
+                  - Clarity와 사용자 테스트로 오류 및 개선 사항 수집
+                  <span className="text-sm indent-5">
+                    (ex: 링크가 없는 영역을 사용자가 클릭하는 패턴 발견 → 실제
+                    링크 추가로 UX 개선)
+                  </span>
+                </p>
+                <p className="mt-1 font-semibold">&#91;결과&#93;</p>
+                <p>- Performance 점수: 49점 → 94점</p>
+                <p>- LCP: 8.3초 → 1.6초</p>
               </div>
 
               <ul className="flex items-center justify-start mt-7">
+                <li className="mr-2">
+                  <img src="./images/nextjs.svg" alt="nextjs" width="45" />
+                </li>
                 <li className="mr-2">
                   <img src="./images/react.svg" alt="react" width="45" />
                 </li>
@@ -93,25 +90,74 @@ export default function SideProjects() {
                     width="45"
                   />
                 </li>
-                <li>
+                <li className="mr-2">
                   <img
                     src="./images/tailwind.svg"
                     alt="Tailwind CSS"
                     width="120"
                   />
                 </li>
+                <li>
+                  <img
+                    src="./images/storybook.svg"
+                    alt="storybook"
+                    width="120"
+                  />
+                </li>
               </ul>
+
+              <dl className="mt-5">
+                <dt className="font-bold">URL</dt>
+                <dd>
+                  <a
+                    className="text-[#38bdf8] underline underline-offset-8"
+                    href="https://bider.vercel.app/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    https://bider.vercel.app/
+                  </a>
+                </dd>
+                <dt className="mt-4 font-bold">GitHub</dt>
+                <dd>
+                  <a
+                    className="text-[#38bdf8] underline underline-offset-8"
+                    href="https://github.com/KFE-E2E-SAJO/BIDER"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    https://github.com/KFE-E2E-SAJO/BIDER
+                  </a>
+                </dd>
+                <dt className="mt-4 font-bold">Notion</dt>
+                <dd>
+                  <a
+                    className="text-[#38bdf8] underline underline-offset-8"
+                    href="https://haruyam15.notion.site/Bider-24c09623840280a2b80eede0ff87383a"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Bider 프로젝트 노션 보기
+                  </a>
+                </dd>
+              </dl>
             </div>
-            <div className="-mt-36">
-              <video autoPlay loop muted playsInline width={600}>
-                <source src="./images/voice4you.webm" type="video/webm" />
-                <source src="./images/voice4you.mp4" type="video/mp4" />
-              </video>
+            <div className="-mt-96">
+              <a
+                href="https://bider.vercel.app/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <video autoPlay loop muted playsInline width={600}>
+                  <source src="./images/bider.webm" type="video/webm" />
+                  <source src="./images/bider.mp4" type="video/mp4" />
+                </video>
+              </a>
             </div>
           </div>
-        </li> */}
+        </li>
 
-        <li className="mb-40" {...ani2}>
+        <li className="mb-40" {...ani3}>
           <p className="mb-10 text-2xl font-bold text-left">
             • 오디오 편집 툴 Voice4U
           </p>
@@ -208,7 +254,7 @@ export default function SideProjects() {
           </div>
         </li>
 
-        <li className="mb-40" {...ani3}>
+        <li className="mb-40" {...ani4}>
           <p className="mb-10 text-2xl font-bold text-left">
             • 플레이리스트 공유 플랫폼 PLY
           </p>
@@ -315,7 +361,7 @@ export default function SideProjects() {
           </div>
         </li>
 
-        <li className="mb-40" {...ani4}>
+        <li className="mb-40" {...ani5}>
           <p className="mb-10 text-2xl font-bold text-left">
             • 면접 스터디를 위한 서비스 - 면뿌
           </p>
